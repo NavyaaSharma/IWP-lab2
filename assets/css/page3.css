@@ -53,14 +53,14 @@ div{
     
 } */
 #animate{
-    animation: animation1 5s;
+    animation: animation1 7s infinite;
 }
 @keyframes animation1 {
         0%{
             transform: translateX(0px);
         }
         100%{
-            transform: translateX(1000px);
+            transform: translateX(900px);
         }
 }
 
@@ -99,7 +99,7 @@ div{
   }
   
   .dropdown-content a:hover {background-color:rgb(221, 146, 171)}
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
