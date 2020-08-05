@@ -1,0 +1,44 @@
+h3{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: left;
+}
+.row{
+    display: flex;
+}
+.heading
+{
+    background-color: rgb(184, 156, 88);
+}
+.abt
+{
+    width: 100%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px black solid;
+    background-color: rgb(158, 181, 224);
+}
+textarea{
+    background-color: rgb(177, 167, 167);
+}
+#solution{
+    resize: both;
+}
+#covidgif{
+    animation: rightdown 3s infinite alternate;
+}
+@keyframes rightdown{
+    0%{
+        transform: translateX(0px);
+    }
+    33%{
+        transform: translateX(500px);
+    }
+    66%{
+        transform: translate(500px,80px);
+    }
+    100%{
+        transform: translate(1000px,80px);
+    }
+}

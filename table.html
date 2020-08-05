@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var ctr=0,total=0,pnum=0,qty,cost,p,q;
+        var arr=new Array(5)
+        arr.fill(0)
+        pnum=window.prompt("Enter product number. Press -1 to stop entering the details");
+        p=parseInt(pnum);
+        while(pnum!=-1)
+        {
+        switch(p)
+        {
+            case 1: cost= 2.98;
+                q= window.prompt("Enter number of quantities sold");
+                qty=parseInt(q);
+                total=cost*qty;
+                arr[p-1]=total;
+                break;
+
+            case 2: cost= 4.50;
+                q= window.prompt("Enter number of quantities sold");
+                qty=parseInt(q);
+                total=cost*qty;
+                arr[p-1]=total;
+                break;
+
+            case 3: cost= 9.98;
+                q= window.prompt("Enter number of quantities sold");
+                qty=parseInt(q);
+                total=cost*qty;
+                arr[p-1]=total;
+                break;
+
+            case 4: cost= 4.49;
+                q= window.prompt("Enter number of quantities sold");
+                qty=parseInt(q);
+                total=cost*qty;
+                arr[p-1]=total;
+                break;
+
+            case 5: cost= 6.87;
+                q= window.prompt("Enter number of quantities sold");
+                qty=parseInt(q);
+                total=cost*qty;
+                arr[p-1]=total;
+                break;
+
+            default: window.alert("Please give proper input");
+            break;
+        }
+            ctr=ctr+1;
+            pnum=window.prompt("Enter product number. Press -1 to stop entering the details");
+            p=parseInt(pnum);
+        }
+        if(ctr!=0)
+        {
+            document.write(`<table border="2px">
+                <tr>
+                    <th>Product #</th>
+                    <th>Total Sales</th>
+                </tr>
+                <tr>
+                    <td>Product 1</td>
+                    <td>${arr[0]}</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>${arr[1]}</td>
+                </tr>
+                <tr>
+                    <td>Product 3</td>
+                    <td>${arr[2]}</td>
+                </tr>
+                <tr>
+                    <td>Product 4</td>
+                    <td>${arr[3]}</td>
+                </tr>
+                <tr>
+                    <td>Product 5</td>
+                    <td>${arr[4]}</td>
+                </tr>
+
+            </table>`)
+        }
+        else
+        {
+            window.alert("No product number is entered");
+        }
+        </script>
+</body>
+</html>
