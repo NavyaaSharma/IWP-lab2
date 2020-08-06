@@ -1,0 +1,78 @@
+body
+{
+    background-image: url('../images/backg2.png');
+    background-position: center;
+    background-size: cover;
+}
+.dropbtn {
+    background-color: purple;
+    color: white;
+    width: 320px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: auto !important;
+  }
+  #dc{
+      flex:1;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+  }
+  .dropdown  {
+    position: relative;
+    display: block;
+    /* margin-top: 20px; */
+    height: 200px;  
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 320px;
+    z-index: 1;
+    height: 170px;
+    /*margin-left: 157px;*/
+  }
+  
+  .dropdown-content a {
+    border: 2px solid purple;
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color:rgb(221, 146, 171)}
+
+  .dropdown:hover .dropdown-content  {
+    display: block;
+  }
+  
+  #main{
+      display: flex;
+  }
+  li{
+      list-style: none;
+  }
+  li:before{
+      content:'';
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-image: url('https://tenor.com/view/butterfly-gif-7835793.gif');
+      background-size: contain;
+  }
+
+.b1{
+    border: 3px solid red;
+}
+.b2{
+    border: 3px dotted green;
+}
+.b3{
+    border: 3px solid red;
+}
